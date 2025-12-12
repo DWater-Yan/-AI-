@@ -6,9 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // 从环境变量读取密钥（根据Python示例，这里应该是一个API KEY）
-const ARK_API_KEY="3086ae99-94ca-46ef-b2a1-4f9821de292b"; // 注意变量名变化
-const VOLC_ENDPOINT = 'https://ark.cn-beijing.volces.com/api/v3';
-const MODEL_ID = 'ep-20251210223007-zmtn5'; // 与示例一致
+const ARK_API_KEY="你的api-key"; // 注意变量名变化
+const VOLC_ENDPOINT = 'api的请求地址';
+const MODEL_ID = '模型名称'; // 与示例一致
 
 // 中间件
 app.use(cors());
@@ -161,4 +161,5 @@ app.listen(PORT, () => {
     console.log(`请确保已设置环境变量 ARK_API_KEY`);
     console.log(`使用模型: ${MODEL_ID}`);
 });
+
 
